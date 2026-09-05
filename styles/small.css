@@ -30,19 +30,12 @@ header span {
 
 #menu {
     margin-left: auto;
+    padding: 0.5rem;
     border: none;
     background-color: #1f3a5f;
     color: #ffffff;
     font-size: 2rem;
     cursor: pointer;
-}
-
-#menu::before {
-    content: "☰";
-}
-
-#menu.open::before {
-    content: "✕";
 }
 
 nav {

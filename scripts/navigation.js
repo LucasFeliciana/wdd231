@@ -3,5 +3,9 @@ const navigation = document.querySelector("#navigation");
 
 menuButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
-    menuButton.classList.toggle("open");
+
+    const isOpen = navigation.classList.contains("open");
+
+    menuButton.textContent = isOpen ? "✕" : "☰";
+    menuButton.setAttribute("aria-expanded", isOpen);
 });
