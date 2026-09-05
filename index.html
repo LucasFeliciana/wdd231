@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta name="description" content="WDD 231 course home page for Lucas Feliciana.">
+    <meta name="author" content="Lucas Feliciana">
+
+    <title>WDD 231 Course Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    <p>Testing</p>
-    
+
+    <header>
+        <img src="images/logo.svg" alt="Site logo">
+        <span>Lucas Feliciana</span>
+
+        <button id="menu" aria-label="Open navigation menu">
+        </button>
+    </header>
+
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section>
+            <h2>About Me</h2>
+            <p>My name is Lucas Feliciana. I am from Brazil and currently live in Illinois.
+                I am studying Software Development at BYU-Idaho. I enjoy learning about
+                web development, programming, and technology.</p>
+
+            <p class="desktop-only">
+                I am currently studying Software Development at BYU-Idaho, where I am continuing
+                to build my knowledge in programming, web development, and software design.
+                Throughout my studies, I have worked with HTML, CSS, JavaScript, Python, and other
+                technologies that are helping me develop a stronger foundation as a future software
+                developer.
+
+                I enjoy learning how websites and applications are created and how different
+                technologies work together to solve real problems. I am especially interested in
+                improving my skills in front-end development, responsive design, programming
+                logic, and creating user-friendly digital experiences.
+
+                My goal is to continue growing as a developer by practicing consistently,
+                completing real projects, and applying what I learn in practical situations.
+                I also want to strengthen my problem-solving skills and become more confident
+                working with larger and more complex projects over time.
+
+        </section>
+
+        <section>
+            <h2>Student Photo</h2>
+
+            <img src="images/profile.jpg" alt="Photo of Lucas Feliciana">
+        </section>
+
+        <section>
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+
+            <div id="courses">
+                <!-- Courses will be generated with JavaScript -->
+            </div>
+
+            <p>
+                The total credits for courses listed above is
+                <span id="totalCredits"></span>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/LucasFeliciana" target="_blank" rel="noopener">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+
+            <a href="https://www.linkedin.com/in/lucas-eduardo-feliciana-4637b7206/" target="_blank" rel="noopener">
+                <img src="images/linkedinicon.svg" alt="LinkedIn">
+            </a>
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Lucas Feliciana | Illinois, USA
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
+
 </html>
