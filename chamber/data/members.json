@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Vexa Cleaning Services",
+      "address": "Naperville, IL",
+      "phone": "(630) 555-1020",
+      "website": "https://www.vexacleaning.com",
+      "image": "vexa.webp",
+      "membership": 3,
+      "description": "Professional upholstery and carpet cleaning services."
+    },
+    {
+      "name": "Nokia",
+      "address": "2000 W Lucent Ln, Naperville, IL 60563",
+      "phone": "(630) 979-9572",
+      "website": "https://www.nokia.com/networks/",
+      "image": "nokia.webp",
+      "membership": 2,
+      "description": "Nokia is a global leader in creating the technologies at the heart of our connected world."
+    },
+    {
+      "name": "Gia Mia Naperville",
+      "address": "110 S Washington St, Naperville, IL 60540",
+      "phone": "(331) 204-7222",
+      "website": "https://www.giamiapizzabar.com",
+      "image": "giamia.webp",
+      "membership": 1,
+      "description": "GIA MIA is a chef-driven Italian restaurant in downtown Naperville offering wood-fired pizzas, fresh pasta, small plates, and handcrafted cocktails in a historic setting."
+    },
+    {
+      "name": "Jet Bride Car wash",
+      "address": "850 E Ogden Ave, Naperville, IL 60540",
+      "phone": "(312) 313-1427",
+      "website": "https://jetbrite.zipscarwash.com/",
+      "image": "jetbride.webp",
+      "membership": 2,
+      "description": "Express car wash offering exterior cleaning, free vacuums, and unlimited monthly wash plans."
+    },
+    {
+      "name": "Nalco and Ecolab Company",
+      "address": "1601 W Diehl Rd, Naperville, IL 60563",
+      "phone": "(630) 305-1000",
+      "website": "https://www.ecolab.com/en-us",
+      "image": "nalco.webp",
+      "membership": 1,
+      "description": "We partner to make the world cleaner, safer and healthier - helping customers succeed while protecting people and the resources vital to life."
+    },
+    {
+      "name": "Downtown Fitness Center",
+      "address": "210 S Washington St, Naperville, IL",
+      "phone": "(630) 555-6674",
+      "website": "https://www.example.com",
+      "image": "fitnesscenter.webp",
+      "membership": 3,
+      "description": "Fitness center offering strength training and group classes."
+    },
+    {
+      "name": "Naperville Tech Solutions",
+      "address": "1600 N Route 59, Naperville, IL",
+      "phone": "(630) 555-7789",
+      "website": "https://www.example.com",
+      "image": "napertech.webp",
+      "membership": 2,
+      "description": "IT support and technology solutions for local businesses."
+    }
+  ]
+}
