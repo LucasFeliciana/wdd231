@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Naperville Chamber of Commerce home page with local events, weather information, and featured businesses.">
+
+    <meta name="author" content="Lucas Feliciana">
+
+    <meta property="og:title" content="Naperville Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover local businesses, events, weather, and opportunities with the Naperville Chamber of Commerce.">
+    <meta property="og:image" content="images/chamber-logo.webp">
+    <meta property="og:url" content="https://lucasfeliciana.github.io/wdd231/chamber/">
+
+    <title>Naperville Chamber of Commerce | Home</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="images/chamber-logo.webp"
+                alt="Naperville Chamber of Commerce logo"
+                class="logo">
+
+            <div>
+                <h1>Naperville</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+
+            <button id="menu" aria-label="Open navigation menu"></button>
+        </div>
+
+        <nav id="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <img src="images/naperville-large.webp"
+                alt="Downtown Naperville Illinois">
+
+            <a href="join.html" class="join-button">
+                Join the Chamber
+            </a>
+        </section>
+
+
+        <!-- EVENTS AND WEATHER -->
+        <div class="home-info">
+
+            <section class="events">
+                <h2>Current Events</h2>
+
+                <article>
+                    <h3>Business Networking Night</h3>
+                    <p>September 25, 2026</p>
+                    <p>6:00 PM</p>
+                    <p>
+                        Connect with local businesses and members of the
+                        Naperville community.
+                    </p>
+                </article>
+            </section>
+
+
+            <section class="weather">
+                <h2>Weather</h2>
+
+                <div class="current-weather">
+                    <img id="weather-icon"
+                        src="images/weather-placeholder.webp"
+                        alt="Current weather icon">
+
+                    <div>
+                        <p>
+                            <span id="current-temp">--</span>°F
+                        </p>
+
+                        <p id="weather-description">
+                            Loading weather...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="forecast">
+                    <h3>3-Day Forecast</h3>
+
+                    <p>
+                        <span id="day1">Today</span>:
+                        <span id="temp1">--</span>°F
+                    </p>
+
+                    <p>
+                        <span id="day2">Tomorrow</span>:
+                        <span id="temp2">--</span>°F
+                    </p>
+
+                    <p>
+                        <span id="day3">Day 3</span>:
+                        <span id="temp3">--</span>°F
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- MEMBER SPOTLIGHTS -->
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+
+            <div id="spotlight-container">
+                <!-- Businesses will be inserted here with JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-contact">
+            <p><strong>Naperville Chamber of Commerce</strong></p>
+            <p>Naperville, Illinois</p>
+            <p>info@napervillechamber.com</p>
+            <p>(630) 555-1234</p>
+        </div>
+
+        <div class="social-links">
+            <a href="#" aria-label="YouTube">YouTube</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Lucas Feliciana</p>
+
+            <p>
+                &copy; <span id="currentyear"></span>
+                Naperville Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

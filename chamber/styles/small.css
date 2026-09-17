@@ -146,3 +146,131 @@ footer p {
     margin-right: 1rem;
     text-decoration: none;
 }
+
+/* =========================
+   HOME PAGE
+========================= */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.join-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #1d3557;
+    color: white;
+
+    padding: 12px 20px;
+
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.join-button:hover {
+    background-color: #457b9d;
+}
+
+
+/* EVENTS + WEATHER */
+
+.home-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    padding: 1rem;
+}
+
+.events,
+.weather {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+
+    background-color: white;
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+    margin-top: 0;
+}
+
+
+/* WEATHER */
+
+.current-weather {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.current-weather img {
+    width: 70px;
+    height: 70px;
+}
+
+#current-temp {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.forecast {
+    margin-top: 1rem;
+}
+
+
+/* SPOTLIGHTS */
+
+.spotlights {
+    padding: 1rem;
+}
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    padding: 1rem;
+    text-align: center;
+
+    background-color: white;
+}
+
+.spotlight-card img {
+    width: 120px;
+    max-height: 100px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.spotlight-card h3 {
+    margin: 0.5rem 0;
+}
+
+.spotlight-card a {
+    color: #1d3557;
+}
