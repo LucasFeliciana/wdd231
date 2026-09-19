@@ -1,8 +1,6 @@
 const membersContainer = document.querySelector("#members");
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
-const menuButton = document.querySelector("#menu-button");
-const navigation = document.querySelector("#navigation");
 
 const url = "data/members.json";
 
@@ -87,10 +85,6 @@ gridButton.addEventListener("click", () => {
 listButton.addEventListener("click", () => {
     membersContainer.classList.add("list");
     membersContainer.classList.remove("grid");
-});
-
-menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
 });
 
 const currentYear = document.querySelector("#currentyear");
