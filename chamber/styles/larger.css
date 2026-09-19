@@ -66,4 +66,27 @@
         gap: 1.5rem;
     }
 
+    #members.list .member-card {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    padding: 1rem;
+    }
+
+    #members.list .member-card h2,
+    #members.list .member-card p,
+    #members.list .member-card a {
+        margin: 0;
+    }
+
+    #members.list .member-card img {
+        display: none;
+    }
+
+    #members.list .member-card p:nth-of-type(1) {
+        display: none;
+    }
+
 }
