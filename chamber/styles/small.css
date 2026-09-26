@@ -81,7 +81,7 @@ nav a:hover {
 }
 
 nav a.active {
-  background-color: #ec0685;
+  background-color: #970d59;
   color: white;
   font-weight: bold;
 }
@@ -363,6 +363,9 @@ fieldset input[type="radio"] {
   margin-bottom: 1rem;
   background-color: #dbe9ee;
   border-radius: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 .membership-card button {
@@ -403,12 +406,6 @@ dialog::backdrop {
 
 .modal-content h2 {
   margin-right: 2rem;
-}
-
-.membership-card {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s ease forwards;
 }
 
 .membership-card:nth-child(2) {
