@@ -89,4 +89,20 @@
         display: none;
     }
 
+    /* JOIN PAGE  */
+
+    .join-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    }
+
+    .membership-section {
+    margin-top: 0;
+    }
+
+    .membership-card {
+    margin-bottom: 1rem;
+    }
 }
