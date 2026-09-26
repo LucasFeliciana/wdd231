@@ -80,6 +80,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
+nav a.active {
+  background-color: #ec0685;
+  color: white;
+  font-weight: bold;
+}
+
 main {
     max-width: 1200px;
     margin: 0 auto;
