@@ -1,0 +1,208 @@
+:root {
+    --dark-green: #0B3D2E;
+    --gold: #D4AF37;
+    --off-white: #F7F7F2;
+    --charcoal: #1F1F1F;
+    --white: #FFFFFF;
+}
+
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--off-white);
+    color: var(--charcoal);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    color: var(--dark-green);
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 0.4rem;
+}
+
+h3 {
+    color: var(--dark-green);
+}
+
+p,
+li {
+    font-size: 1rem;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: var(--dark-green);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 5px solid var(--gold);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* MAIN */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+section {
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+
+/* SCENARIOS */
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.8rem;
+}
+
+
+/* COLOR SCHEME */
+
+.color-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.color-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid var(--charcoal);
+}
+
+.color-card h3 {
+    margin-top: 0;
+}
+
+.dark-green {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+.dark-green h3 {
+    color: var(--white);
+}
+
+.gold {
+    background-color: var(--gold);
+    color: var(--charcoal);
+}
+
+.gold h3 {
+    color: var(--charcoal);
+}
+
+.off-white {
+    background-color: var(--off-white);
+    color: var(--charcoal);
+}
+
+.charcoal {
+    background-color: var(--charcoal);
+    color: var(--white);
+}
+
+.charcoal h3 {
+    color: var(--white);
+}
+
+
+/* TYPOGRAPHY */
+
+.typography-example {
+    padding: 1rem;
+}
+
+.montserrat-example {
+    font-family: "Montserrat", sans-serif;
+}
+
+.roboto-example {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* WIREFRAMES */
+
+.wireframe-placeholder {
+    border: 2px dashed var(--dark-green);
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: var(--off-white);
+}
+
+section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto 2rem;
+    border: 2px solid var(--charcoal);
+    display: block;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--dark-green);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 5px solid var(--gold);
+}
+
+
+/* LARGER SCREENS */
+
+@media screen and (min-width: 700px) {
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .color-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
