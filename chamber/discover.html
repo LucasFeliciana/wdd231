@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Discover attractions, landmarks, and community highlights in Naperville, Illinois.">
+
+    <meta name="author" content="Lucas Feliciana">
+
+    <meta property="og:title" content="Discover Naperville">
+    <meta property="og:description"
+        content="Explore attractions, landmarks, and places of interest in Naperville, Illinois.">
+    <meta property="og:image"
+        content="https://lucasfeliciana.github.io/wdd231/chamber/images/chamberlogo.webp">
+    <meta property="og:url"
+        content="https://lucasfeliciana.github.io/wdd231/chamber/discover.html">
+
+    <title>Naperville Chamber of Commerce | Discover</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="site-brand">
+            <img src="images/chamberlogo.webp"
+                alt="Naperville Chamber of Commerce logo">
+
+            <span>Naperville Chamber of Commerce</span>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="discover-main">
+
+        <h1>Discover Naperville</h1>
+
+        <section class="discover-intro">
+            <h2>Explore Our Community</h2>
+
+            <p>
+                Discover some of the attractions, landmarks, and places
+                that make Naperville a great place to live, work, and visit.
+            </p>
+        </section>
+
+
+        <section class="visit-message"
+            aria-label="Visitor information">
+
+            <p id="visit-message"></p>
+
+        </section>
+
+
+        <section class="discover-gallery"
+            aria-label="Naperville places of interest">
+
+            <!--
+                The 8 cards will be created with JavaScript
+                using the information stored in places.mjs
+            -->
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-contact">
+            <p><strong>Naperville Chamber of Commerce</strong></p>
+            <p>Naperville, Illinois</p>
+            <p>info@napervillechamber.com</p>
+            <p>(630) 555-1234</p>
+        </div>
+
+        <div class="social-links">
+            <a href="#" aria-label="YouTube">YouTube</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Lucas Feliciana</p>
+
+            <p>
+                &copy; <span id="currentyear"></span>
+                Naperville Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
