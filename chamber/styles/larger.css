@@ -57,10 +57,6 @@
 
     /* SPOTLIGHTS */
 
-    .spotlights {
-        padding: 1rem;
-    }
-
     #spotlight-container {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
@@ -102,11 +98,7 @@
     margin-top: 0;
     }
 
-    .membership-card {
-    margin-bottom: 1rem;
-    }
-
-        /* DISCOVER PAGE */
+     /* DISCOVER PAGE */
 
     .discover-gallery {
         grid-template-columns: 1fr 1fr;

@@ -468,10 +468,6 @@ dialog::backdrop {
 
 /* DISCOVER PAGE */
 
-.discover-main {
-    padding: 1rem;
-}
-
 .discover-intro {
     margin-bottom: 1rem;
 }
@@ -565,10 +561,7 @@ dialog::backdrop {
 /* DISCOVER MODAL */
 
 #place-modal {
-    width: 90%;
     max-width: 500px;
-    border: none;
-    border-radius: 10px;
     padding: 2rem;
 }
 
