@@ -84,13 +84,38 @@
 
         <section class="discover-gallery"
             aria-label="Naperville places of interest">
-
-            <!--
-                The 8 cards will be created with JavaScript
-                using the information stored in places.mjs
-            -->
-
         </section>
+
+        <dialog id="place-modal">
+
+            <button id="close-modal" aria-label="Close modal">
+                ❌
+            </button>
+
+            <h2 id="modal-title"></h2>
+
+            <p id="modal-category"></p>
+
+            <p>
+                <strong>Address:</strong>
+                <span id="modal-address"></span>
+            </p>
+
+            <p>
+                <strong>Hours:</strong>
+                <span id="modal-hours"></span>
+            </p>
+
+            <p id="modal-details"></p>
+
+            <a id="modal-website"
+            href="#"
+            target="_blank"
+            rel="noopener">
+                Visit Website
+            </a>
+
+        </dialog>
 
     </main>
 
