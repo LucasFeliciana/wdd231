@@ -801,3 +801,19 @@ footer {
 .thankyou-container .btn {
   margin: 0.4rem;
 }
+
+
+/* =========================
+   FOOTER VIDEO LINK
+========================= */
+
+.footer-content .video-link {
+  color: #f2d36b;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer-content .video-link:hover {
+  color: #ffffff;
+}
