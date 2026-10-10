@@ -1,0 +1,202 @@
+
+/* =========================
+   MEDIUM SCREENS
+========================= */
+
+@media screen and (min-width: 641px) {
+
+  /* HEADER AND NAVIGATION */
+
+  .header-content {
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  #primary-navigation {
+    display: block;
+    width: auto;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.25rem;
+    margin: 0;
+  }
+
+  nav a {
+    padding: 0.7rem 0.8rem;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+
+  /* HERO SECTION */
+
+  .hero {
+    min-height: 480px;
+    padding: 5rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.6rem;
+  }
+
+  /* SHARED SECTIONS */
+
+  .introduction,
+  .featured-legends,
+  .compare-preview,
+  .suggest-preview {
+    padding: 4rem 2rem;
+  }
+
+  .section-heading h2,
+  .compare-preview h2,
+  .suggest-preview h2 {
+    font-size: 2.2rem;
+  }
+
+  /* FEATURED LEGENDS */
+
+  .featured-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+}
+
+/* =========================
+   LARGE SCREENS
+========================= */
+
+@media screen and (min-width: 1024px) {
+
+  /* HEADER */
+
+  .header-content {
+    padding: 1rem 2rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  nav a {
+    padding: 0.8rem 1rem;
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: 550px;
+  }
+
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero-content > p:not(.hero-subtitle) {
+    font-size: 1.15rem;
+  }
+
+  /* FEATURED LEGENDS */
+
+  .featured-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .featured-card {
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+  .featured-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 15%);
+  }
+
+  /* COMPARE AND SUGGEST */
+
+  .compare-preview,
+  .suggest-preview {
+    padding: 5rem 2rem;
+  }
+
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .featured-card {
+    transition: none;
+  }
+
+  .featured-card:hover {
+    transform: none;
+  }
+
+}
+
+
+/* =========================
+   LEGENDS - MEDIUM SCREENS
+========================= */
+
+@media screen and (min-width: 641px) {
+
+  .legends-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .legends-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+/* =========================
+   LEGENDS - LARGE SCREENS
+========================= */
+
+@media screen and (min-width: 1024px) {
+
+  .legends-filters {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .legends-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .legend-card {
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+  .legend-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 15%);
+  }
+
+}
+

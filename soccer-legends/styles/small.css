@@ -1,0 +1,455 @@
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+:root {
+  --primary-color: #0b3d2e;
+  --secondary-color: #d4af37;
+  --background-color: #f7f7f2;
+  --text-color: #1f1f1f;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 3px;
+}
+
+/* =========================
+   HEADER AND NAVIGATION
+========================= */
+
+header {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+#menu-button {
+  padding: 0.3rem 0.6rem;
+  background: transparent;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#primary-navigation {
+  display: none;
+  width: 100%;
+}
+
+#primary-navigation.open {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+nav a {
+  display: block;
+  padding: 0.8rem 1rem;
+  color: var(--white);
+  text-align: center;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 4rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+}
+
+.hero-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.btn-primary:hover {
+  background-color: #f2d36b;
+}
+
+.btn-secondary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: #155c45;
+}
+
+/* =========================
+   SHARED SECTIONS
+========================= */
+
+.introduction,
+.featured-legends,
+.compare-preview,
+.suggest-preview {
+  padding: 3rem 1.5rem;
+}
+
+.introduction,
+.featured-legends,
+.compare-content,
+.suggest-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-heading h2,
+.compare-preview h2,
+.suggest-preview h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.introduction > p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* =========================
+   FEATURED LEGENDS
+========================= */
+
+.featured-legends {
+  background-color: var(--white);
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.featured-card {
+  overflow: hidden;
+  background-color: var(--background-color);
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 8%);
+}
+
+.featured-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.card-content h3 {
+  margin: 0 0 0.4rem;
+  color: var(--primary-color);
+}
+
+.card-content p {
+  margin: 0.5rem 0;
+}
+
+.card-content a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #07583e;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.section-action {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* =========================
+   COMPARE AND SUGGEST
+========================= */
+
+.compare-preview {
+  background-color: #e4eae5;
+  text-align: center;
+}
+
+.suggest-preview {
+  text-align: center;
+}
+
+.compare-content,
+.suggest-content {
+  max-width: 750px;
+}
+
+.compare-content p,
+.suggest-content p {
+  margin-bottom: 1.5rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 2rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+}
+
+
+/* =========================
+   LEGENDS PAGE
+========================= */
+
+.legends-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  min-height: 60vh;
+}
+
+/* FILTERS */
+
+.legends-filters {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 8%);
+}
+
+.legends-filters label {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.legends-filters select,
+.legends-filters input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #777;
+  border-radius: 6px;
+  background-color: var(--white);
+  color: var(--text-color);
+  font: inherit;
+}
+
+/* PLAYER CARDS */
+
+.legends-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.legend-card {
+  overflow: hidden;
+  background-color: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 8%);
+}
+
+.legend-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.legend-card-content {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.legend-card-content h2 {
+  margin: 0 0 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+}
+
+.legend-card-content p {
+  margin: 0.5rem 0;
+}
+
+.legend-card button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.legend-card button:hover {
+  background-color: #155c45;
+}
+
+/* NO RESULTS */
+
+#no-results {
+  padding: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* MODAL */
+
+#player-modal {
+  width: min(90%, 600px);
+  max-height: 85vh;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  overflow-y: auto;
+  color: var(--text-color);
+}
+
+#player-modal::backdrop {
+  background-color: rgb(0 0 0 / 70%);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal-header h2 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+#close-modal {
+  padding: 0.25rem 0.65rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
