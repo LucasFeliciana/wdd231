@@ -200,3 +200,69 @@
 
 }
 
+
+/* =========================
+   COMPARE - MEDIUM SCREENS
+========================= */
+
+@media screen and (min-width: 641px) {
+
+  .compare-selectors {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .comparison-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+/* =========================
+   COMPARE - LARGE SCREENS
+========================= */
+
+@media screen and (min-width: 1024px) {
+
+  .compare-section {
+    padding: 4rem 2rem;
+  }
+
+  .compare-selectors {
+    padding: 2rem;
+  }
+
+  #compare-button {
+    padding: 1rem 3rem;
+  }
+
+}
+
+
+/* =========================
+   SUGGEST - MEDIUM SCREENS
+========================= */
+
+@media screen and (min-width: 641px) {
+
+  .suggest-section {
+    padding: 4rem 2rem;
+  }
+
+  .suggest-form {
+    padding: 2rem;
+  }
+
+  .suggest-form fieldset {
+    padding: 1.75rem;
+  }
+
+  .submit-button {
+    width: auto;
+    min-width: 240px;
+    align-self: center;
+  }
+
+}
+
+

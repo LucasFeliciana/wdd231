@@ -1,3 +1,4 @@
+import { getPlayers } from "./players-api.js";
 
 const legendsContainer = document.querySelector("#legends-container");
 const playerModal = document.querySelector("#player-modal");
@@ -9,33 +10,31 @@ const countryFilter = document.querySelector("#country-filter");
 const positionFilter = document.querySelector("#position-filter");
 const searchPlayer = document.querySelector("#search-player");
 const noResults = document.querySelector("#no-results");
+const favoritesOnly = document.querySelector("#favorites-only");
 
 
 let players = [];
 
 let favorites = JSON.parse(localStorage.getItem("soccerFavorites")) || [];
 
-// Fetch player data
-async function getPlayers() {
+
+/* =========================
+   LOAD PLAYERS
+========================= */
+
+async function loadPlayers() {
   try {
-    const response = await fetch("data/players.json");
+    players = await getPlayers();
 
-    if (!response.ok) {
-      throw new Error("Failed to load player data.");
-    }
-
-    players = await response.json();
-
-    populateFilters()
+    populateFilters();
     displayPlayers(players);
 
   } catch (error) {
-    console.error("Error loading players:", error);
-
     legendsContainer.textContent =
       "Unable to load players. Please try again later.";
   }
 }
+
 
 // Generate player cards
 function displayPlayers(playerList) {
@@ -79,7 +78,7 @@ function displayPlayers(playerList) {
   });
 }
 
-getPlayers();
+loadPlayers();
 
 
 /* =========================
@@ -195,6 +194,7 @@ function filterPlayers() {
   const selectedCountry = countryFilter.value;
   const selectedPosition = positionFilter.value;
   const searchText = searchPlayer.value.trim().toLowerCase();
+  const showFavoritesOnly = favoritesOnly.checked;
 
   const filteredPlayers = players.filter(player => {
     const matchesCountry =
@@ -208,7 +208,13 @@ function filterPlayers() {
     const matchesSearch =
       player.name.toLowerCase().includes(searchText);
 
-    return matchesCountry && matchesPosition && matchesSearch;
+    const matchesFavorite =
+        !showFavoritesOnly || favorites.includes(player.id);
+
+    return matchesCountry &&
+        matchesPosition &&
+        matchesSearch &&
+        matchesFavorite;
   });
 
   displayPlayers(filteredPlayers);
@@ -221,6 +227,7 @@ function filterPlayers() {
 countryFilter.addEventListener("change", filterPlayers);
 positionFilter.addEventListener("change", filterPlayers);
 searchPlayer.addEventListener("input", filterPlayers);
+favoritesOnly.addEventListener("change", filterPlayers);
 
 
 /* =========================

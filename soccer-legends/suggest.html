@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Suggest a legendary soccer player who deserves to be featured on Soccer Legends.">
+  <meta name="author" content="Lucas Feliciana">
+
+  <title>Suggest a Legend | Soccer Legends</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/main.js" type="module"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="logo">⚽ Soccer Legends</a>
+
+      <button id="menu-button"
+              type="button"
+              aria-label="Open navigation menu"
+              aria-expanded="false"
+              aria-controls="primary-navigation">
+        ☰
+      </button>
+
+      <nav id="primary-navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="legends.html">Legends</a></li>
+          <li><a href="compare.html">Compare</a></li>
+          <li>
+            <a href="suggest.html" class="active" aria-current="page">
+              Suggest a Legend
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="suggest-section">
+      <div class="section-heading">
+        <h1>Suggest a Soccer Legend</h1>
+        <p>
+          Is there a legendary player missing from our collection?
+          Tell us who deserves to be featured!
+        </p>
+      </div>
+
+      <form method="get" action="thankyou.html" class="suggest-form">
+
+        <fieldset>
+          <legend>Your Information</legend>
+
+          <label for="fullname">Full Name *</label>
+          <input type="text"
+                 id="fullname"
+                 name="fullname"
+                 autocomplete="name"
+                 required
+                 minlength="2"
+                 maxlength="100">
+
+          <label for="email">Email Address *</label>
+          <input type="email"
+                 id="email"
+                 name="email"
+                 autocomplete="email"
+                 required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Player Information</legend>
+
+          <label for="playername">Player Name *</label>
+          <input type="text"
+                 id="playername"
+                 name="playername"
+                 required
+                 minlength="2"
+                 maxlength="100">
+
+          <label for="country">Country *</label>
+          <input type="text"
+                 id="country"
+                 name="country"
+                 required
+                 maxlength="60">
+
+          <label for="position">Playing Position *</label>
+          <select id="position" name="position" required>
+            <option value="" disabled selected>Select a position</option>
+            <option value="Goalkeeper">Goalkeeper</option>
+            <option value="Defender">Defender</option>
+            <option value="Midfielder">Midfielder</option>
+            <option value="Forward">Forward</option>
+          </select>
+
+          <label for="reason">Why is this player a legend? *</label>
+          <textarea id="reason"
+                    name="reason"
+                    rows="5"
+                    minlength="10"
+                    maxlength="1000"
+                    placeholder="Tell us about their achievements and impact on soccer..."
+                    required></textarea>
+        </fieldset>
+
+        <button type="submit" class="submit-button">
+          Submit Suggestion
+        </button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="currentyear"></span> Soccer Legends</p>
+      <p>Lucas Feliciana | WDD 231 Individual Project</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
