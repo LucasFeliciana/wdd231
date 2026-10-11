@@ -150,7 +150,7 @@ nav a.active {
    BUTTONS
 ========================= */
 
-.btn {
+.soccer-button {
   display: inline-block;
   padding: 0.85rem 1.5rem;
   border-radius: 6px;
@@ -159,21 +159,21 @@ nav a.active {
   transition: background-color 0.2s ease;
 }
 
-.btn-primary {
+.soccer-button-primary {
   background-color: var(--secondary-color);
   color: var(--text-color);
 }
 
-.btn-primary:hover {
+.soccer-button-primary:hover{
   background-color: #f2d36b;
 }
 
-.btn-secondary {
+.soccer-button-secondary{
   background-color: var(--primary-color);
   color: var(--white);
 }
 
-.btn-secondary:hover {
+.soccer-button-secondary:hover {
   background-color: #155c45;
 }
 
@@ -425,7 +425,7 @@ footer {
   background-color: rgb(0 0 0 / 70%);
 }
 
-.modal-header {
+.player-modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -433,7 +433,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-.modal-header h2 {
+.player-modal-header h2 {
   margin: 0;
   color: var(--primary-color);
 }
